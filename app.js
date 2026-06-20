@@ -13,12 +13,33 @@
 
 
 // 1. Reverse an array in same array.
-const arr = [1, 2, 3, 4, 5];
+// const arr = [1, 2, 3, 4, 5];
 
-for( i=0; i<arr.length/2; i++){
-    let temp=arr[i]
-    arr[i]=arr[arr.length-1-i]
-    arr[arr.length-1-i]=temp
+// for( i=0; i<arr.length/2; i++){
+//     let temp=arr[i]
+//     arr[i]=arr[arr.length-1-i]
+//     arr[arr.length-1-i]=temp
+// }
+// console.log(arr)
+
+
+
+
+
+// Flatten a nested array.
+
+ const arr = [1, [2, 3], [4, [5]]];
+// Output: [1, 2, 3, 4, 5]
+let newarr=[]
+const func=(arr)=>{
+    arr.forEach((item) => {
+        if(Array.isArray(item)){
+            func(item)
+        }else{
+            newarr.push(item)
+        }
+    });
 }
-console.log(arr)
 
+func(arr)
+console.log(newarr)
