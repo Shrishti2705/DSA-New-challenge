@@ -43,3 +43,37 @@ const func=(arr)=>{
 
 func(arr)
 console.log(newarr)
+
+
+
+
+
+
+
+
+
+
+// const arr = [1, [2, 3], [4, [5]]];
+// let newarr=[]
+
+// const flattern=(arr)=>{
+// arr.forEach((item)=>{
+//     if(Array.isArray(item)){
+//         flattern(item)
+//     }else{
+//         newarr.push(item)
+//     }
+// })
+    
+// }
+
+// flattern(arr)
+// console.log(newarr)
+
+
+
+
+
+
+
+
