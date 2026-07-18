@@ -236,8 +236,69 @@ console.log(value+":"+count)
 
 
 
+// count the occurance of the all elements
+
+let arr=[1,2,2,3,2]
+for(let i=0; i<arr.length; i++){
+    let count=1;
+    for(let j=i+1; j<arr.length; j++){
+        if(arr[i]==arr[j]){
+            count++
+        }
+    }
+    let counted=false; 
+    for(let k=0; k<i; k++){
+        if(arr[i]==arr[k]){
+            counted=true;
+            break;
+        }
+    }
+    if(!counted){
+        console.log(arr[i], count)
+    }
+}
 
 
+
+
+let arr=[5,1,5,2,5]
+let value=5
+let count=1
+for(let i=0; i<arr.length; i++){
+
+        if(arr[i]==value){
+            count++
+        }
+    
+    if(count==2){
+        console.log(value, count)
+        break;
+    }
+}
+
+
+
+
+
+
+
+//  Filter even numbers.
+
+
+const arr = [1, 2, 3, 4, 5];
+// Output:[2, 4]
+
+for(let i=0; i<arr.length; i++){
+    if(arr[i]%2!==0){
+       for(let k=i; k<arr.length-1; k++){
+           arr[k]=arr[k+1]
+       
+       }
+       arr.length--,
+       i--
+    }
+}
+console.log(arr)
 
 
 
