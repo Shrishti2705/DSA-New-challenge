@@ -219,5 +219,29 @@ console.log(newarr)
 
 
 
+// 9. Count occurrences of a value.
+let value=2
+let count=0
+const arr = [1, 2, 2, 3, 2];
+// Output for value = 2:3
+for(let i=0; i<arr.length; i++){
+    if(arr[i]==value){
+        count++
+    }
+}
+console.log(value+":"+count)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
