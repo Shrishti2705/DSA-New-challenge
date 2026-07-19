@@ -303,6 +303,133 @@ console.log(arr)
 
 
 
+// Find the index of the second occurrence of a value.
+
+const arr = [5, 1, 5, 2, 5];
+// Output for value = 5: 2
+let value=5
+  let count=0;
+for(let i=0; i<arr.length; i++){
+  
+if(value==arr[i]){
+    count++
+}
+if(count==2){
+    console.log(value, i)
+    break;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+// Sort an array in descending order.
+
+
+const arr = [3, 1, 4, 2,9];
+// [4, 3, 2, 1]
+
+for(let i=0; i<arr.length; i++){
+    for(let j=i+1; j<arr.length; j++){
+        if(arr[i]<arr[j]){
+            temp=arr[i]
+        arr[i]=arr[j]
+        arr[j]=temp
+    
+        }
+    }
+    
+}
+console.log(arr)
+
+
+
+
+
+// 13. Find common elements in two arrays.
+
+
+ const a = [1, 2, 3,7,9]; const b = [2, 3, 4,9];
+// Output:[2, 3]
+let c=[]
+
+for(let i=0; i<a.length; i++){
+    for(let j=0; j<b.length; j++){
+        if(a[i]==b[j]){
+            c.push(a[i])
+        }
+    }
+}
+console.log(c)
+
+
+
+
+
+// 14. Find unique elements from two arrays.
+
+const a = [1, 2, 3]; const b = [3, 4, 5];
+// Output:[1, 2, 4, 5]
+let c=[]
+
+for(let i=0; i<a.length; i++){
+    let found=false;
+    for(let j=0; j<b.length; j++){
+        if(a[i]==b[j])
+        {
+            found=true;
+            break;
+        }
+    }
+        if(!found){
+            c.push(a[i])
+        }
+}
+    for(let i=0; i<b.length; i++){
+        let found=false;
+        for(let j=0; j<a.length; j++){
+            if(b[i]==a[j]){
+                found=true;
+                break;
+            }
+        }
+        if(!found){
+            c.push(b[i])
+        }
+    }
+
+console.log(c)
+
+
+
+
+
+// 15. Remove falsy values from an array.
+const arr = [0, "a", "", false, 5];
+// Output:  ["a", 5]
+
+for(let i=0; i<arr.length; i++){
+    if(!arr[i]){
+        for(let j=i; j<arr.length; j++){
+            arr[j]=arr[j+1]
+        }
+        arr.length--;
+        i--
+    }
+}
+console.log(arr)
+
+
+
+
+
+
 
 
 
