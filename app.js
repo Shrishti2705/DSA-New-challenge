@@ -433,3 +433,42 @@ console.log(arr)
 
 
 
+
+
+
+
+
+
+
+
+
+
+// 16. Chunk an array into smaller arrays.
+
+const arr = [1, 2, 3, 4, 5];
+// chunk size = 2 Output:[[1, 2], [3, 4], [5]]
+let size=2
+let result=[]
+let temp=[]
+index=0
+
+for(let i=0; i<arr.length; i++){
+    temp[index]=arr[i]
+    index++
+    
+    if(index==size){
+        result[result.length]=temp
+        temp=[]
+        index=0
+    }
+}
+if(temp.length>0){
+    result[result.length]=temp
+}
+console.log(result)
+
+
+
+
+
+
