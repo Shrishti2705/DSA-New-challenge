@@ -472,3 +472,72 @@ console.log(result)
 
 
 
+
+
+// 17. Find the longest string in an array.
+
+const arr = ["a", "abcd", "abttttc"];
+// Output:"abcd"
+let longest=arr[0]
+for(let i=0; i<arr.length; i++){
+    if(arr[i].length>longest.length){
+        longest=arr[i]
+    }
+}
+console.log(longest)
+
+
+
+
+
+
+
+
+// 18. Convert array to object using index as key.
+
+
+
+const arr = ['a', 'b'];
+// Output:{0: 'a', 1: 'b'}
+let obj={}
+for(let i=0; i<arr.length; i++){
+    obj[i]=arr[i]
+}
+console.log(obj)
+
+
+
+
+
+
+
+
+
+// 19. Find second largest number.
+
+const arr = [5, 3, 9, 7];
+// Output: 7
+let longest=arr[0]
+for(let i=0; i<arr.length; i++){
+    if(longest<arr[i]){
+        longest=arr[i]
+    }
+}
+console.log(longest)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
